@@ -1,0 +1,42 @@
+#editform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(145, 96, 6);
+    width: 450px;
+    height: 800px;
+    margin: auto auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+.edititems{
+    margin-top: 10px;
+    width: 350px;
+    height: 30px;
+    font-size: larger;
+}
+#updatebtn{
+    margin-top: 50px;
+}
+label{
+    padding-right: 250px;
+    font-weight: bold;
+}
+#addbookcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(145, 96, 6);
+    width: 450px;
+    height: 750px;
+    margin: auto auto;
+    margin-top: 50px;
+}
+.add{
+    margin-top: 40px;
+    width: 250px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: larger;
+}
