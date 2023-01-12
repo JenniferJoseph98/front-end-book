@@ -9,9 +9,7 @@ function Logout() {
   }
   return (
     <div>
-      <button className="addbookbtn" onClick={() => logoff()}>
-        logout
-      </button>
+      <button id="logoutbutton" onClick={() => logoff()}>logout</button>
     </div>
   );
 }

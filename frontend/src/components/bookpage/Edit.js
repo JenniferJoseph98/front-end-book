@@ -11,12 +11,9 @@ function Edit() {
     e.preventDefault();
     console.log(bookdetails);
     axios
-      .put(
-        `https://full-stack-book.vercel.app/api/book/update/${bookdetails.id}`,
-        {
-          bookdetails,
-        }
-      )
+      .put(`http://localhost:8000/api/book/update/${bookdetails.id}`, {
+        bookdetails,
+      })
       .then((res) => {
         navigate("/books");
       })

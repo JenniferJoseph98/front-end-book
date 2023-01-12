@@ -13,10 +13,14 @@ function Login() {
     e.preventDefault();
     console.log(userdetails);
     axios
-      .post(`https://full-stack-book.vercel.app/api/user/login`, {
-        username: userdetails.username,
-        password: userdetails.password,
-      })
+      .post(
+        `https://vercel.com/jenniferjoseph98/full-stack-book/api/user/login`,
+        {
+          //`https://638b355bf783e81285847180--chic-cannoli-2b5552.netlify.app/api/user/login`
+          username: userdetails.username,
+          password: userdetails.password,
+        }
+      )
       .then((res) => {
         console.log(res);
         localStorage.setItem("user", res.data.user);
@@ -24,7 +28,7 @@ function Login() {
         navigate("/books");
       })
       .catch((e) => {
-        alert("Email not exist ,Kindly register");
+        alert(e);
       });
   }
   return (

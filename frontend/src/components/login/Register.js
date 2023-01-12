@@ -18,7 +18,7 @@ function Register() {
       alert("Password and confirm password must be same");
     } else {
       axios
-        .post("https://full-stack-book.vercel.app/api/user/register", {
+        .post("http://localhost:8000/api/user/register", {
           //https://638b355bf783e81285847180--chic-cannoli-2b5552.netlify.app/api/user/register
           username: username,
           password: password,

@@ -15,7 +15,7 @@ function View() {
   const { state } = useLocation();
   function handleDelete() {
     axios
-      .delete(`https://full-stack-book.vercel.app/api/book/delete/${state._id}`)
+      .delete(`http://localhost:8000/api/book/delete/${state._id}`)
       //`https://638b355bf783e81285847180--chic-cannoli-2b5552.netlify.app/api/book/delete/${state._id}`
       .then((res) => {
         console.log(state._id);
@@ -33,6 +33,7 @@ function View() {
   }
   return (
     <div id="viewpage">
+     
       <div id="table">
         <TableContainer component={Paper} className="table">
           <Table>

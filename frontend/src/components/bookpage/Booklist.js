@@ -10,7 +10,8 @@ function Booklist() {
   useEffect(() => {
     let id = localStorage.getItem("user");
     axios
-      .get(`https://full-stack-book.vercel.app/api/book/getallbooks/${id}`)
+      .get(`http://localhost:8000/api/book/getallbooks/${id}`)
+      //`https://638b355bf783e81285847180--chic-cannoli-2b5552.netlify.app/api/book/getallbooks/${id}`
       .then((res) => {
         console.log(res.data);
         setBook(res.data);

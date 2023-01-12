@@ -3,26 +3,17 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 }
-
 .book{
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     margin-top: 40px;
     margin-left: 40px;
-    width: 23%;
-    height: 380px;
+    width: 220px;
+    height: 500px;
    border-radius: 20px;
     font-size: larger;
     color: white;   
 }
-.addbookbtn{
-    margin-top: 20px;
-    color: #4e54c8;
-    width: 150px;
-    font-size: larger;
-    border-radius: 10px;
-    font-weight: bolder;
-    height: 30px;
-}
+
 #booklistpage{
     display: flex;
     margin-top: 25px;
